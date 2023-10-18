@@ -12,8 +12,8 @@ class NewsController extends Controller
     // Metode untuk menampilkan tampilan berita
     public function index()
     {
-        // Anda dapat mengganti ini dengan logika untuk mengambil data berita dari database
-        $news = News::all(); // Gantilah 'News' dengan model yang sesuai
+
+        $news = News::all();
 
         return view('news.index', compact('news'));
     }
